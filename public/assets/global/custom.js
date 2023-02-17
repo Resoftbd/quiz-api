@@ -1,1 +1,0 @@
-$(document).ready(function() {    var customScroll = $('.c-custom-scrollbar');    if(customScroll.length > 0){        mApp.initScroller($('.c-custom-scrollbar'), {});    }});
