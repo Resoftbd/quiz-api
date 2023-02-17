@@ -1,0 +1,293 @@
+.fullWidth{
+    position:relative;
+    float: left;
+    width:100%;
+}
+.full{
+    width:100%;
+}
+.fullHeight{
+    height: 100%;
+}
+.hidden{
+    display: none;
+}
+.landingPages .note{
+    color:#aaa;
+    font-size: 12px;
+    font-style: italic;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.landingPagePublic .note{
+    display: none !important;
+}
+.landingPagePublic .note.public{
+    display: block !important;
+}
+.landingPageManagement{
+    position: relative;
+    width: 100%;
+}
+.landingPageManagement .form-box,.landingPagePublic .form-box{
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.landingPageCon{
+    box-sizing: border-box;
+}
+.landingPageManagement .page-title{
+    font-size: 1.25rem;
+}
+.landingPageManagement .landingPages{
+    /*border:2px solid #eee;*/
+    border-radius:3px;
+    min-height: 300px;
+    padding: 0px;
+}
+.landingPagePublic .landingPages{
+    padding:15px;
+}
+.landingPagePublic .landingPages:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-right: -5px;
+    vertical-align: middle;
+}
+.landingPages .m-portlet{
+    display: inline-block;
+    width: 100%;
+}
+.landingPages .m-portlet__body{
+    text-align: center;
+}
+.landingPagePublic .landingPages>.middle-child{
+    display: inline-block;
+    vertical-align: middle;
+}
+.landingPages .qoutesEditableCon {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.landingPages .qoutesEditable {
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+.landingPages .qoutesEditableCon::after,
+.landingPages .nonEditMask::after,
+.landingPages .managementMask::after{
+    content: '';
+    position: absolute;
+    top:0; left:0; bottom:0; right:0;
+    z-index: 2;
+}
+.landingPages.editing .qoutesEditableCon::after,
+.landingPages.editing .nonEditMask::after,
+.landingPagePublic .managementMask::after,
+.landingPagePublic .landingPages .qoutesEditableCon::after,
+.landingPagePublic .landingPages .nonEditMask::after
+{
+    display: none !important;
+}
+.landingPages.editing .qoutesEditable,
+.landingPages.editing .qoutesEditableFake
+{
+    /*border: 2px dashed #ccc;*/
+    outline: 2px dashed #ccc !important;
+    outline-offset: 2px;
+}
+.landingPages.editing .qoutesEditable:focus,
+.landingPages.editing .qoutesEditableFake:focus
+{
+    /*border: 2px dashed #2898da;*/
+    outline: 2px dashed #2898da !important;
+}
+.landingPages .toolbar-editing,.landingPages.editing .toolbar-default {
+    display:none !important;
+}
+.landingPages.editing .toolbar-editing {
+    display:table-cell !important;
+}
+.landingPages .qoutesEditable {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+/*.landingPageCon-1*/
+.landingPageCon-1 .landingPages .logo{
+    width: 200px !important;
+    max-width:100% !important;
+}
+.landingPageCon-1 .landingPages-2 .logo{
+    width: 150px !important;
+}
+.landingPageCon-1 .landingPages .form-title{
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: #555;
+    font-weight:500;
+}
+.landingPageCon-1 .landingPages .buttons .btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.landingPageCon-1 .landingPages textarea.form-control{
+    min-height: 120px;
+}
+.landingPageCon-1 .landingPages .form-control{
+    padding: 1rem 1.75rem;
+    font-size: 1.15rem;
+    line-height: 1.5;
+}
+
+
+
+/*.landingPageCon-2*/
+.landingPageCon-2 .landingPages .moto{
+    text-align:center;
+    font-size:12px;
+    color:#aaa;
+    margin-bottom: 50px;
+}
+.landingPageCon-2 .landingPages .logo{
+    width: 400px !important;
+    max-width:100% !important;
+}
+.landingPageCon-2 .landingPages .form-title{
+    font-size:20px;
+    font-weight: 400;
+}
+.rankingConWrapper{
+}
+.rankingCon{
+    position: relative;
+    float:left;
+    width:100%;
+}
+.rankingCon>.box{
+    position: relative;
+    float: left;
+    width:20%;
+    /*border:1px solid #000;*/
+    padding: 5px;
+}
+.rankingCon>.box>.img{
+    position: relative;
+    float: left;
+    width:100%;
+    padding-top: 100%;
+}
+.rankingCon>.box>.img>.icon{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+.rankingCon>.box>.img>.icon.blank{
+    opacity:1;
+}
+.rankingCon>.box>.img>.icon.filled{
+    opacity:0;
+}
+.rankingCon>.box.notOpen>.img>.icon.filled{
+    opacity:0;
+}
+.rankingCon>.box.notOpen>.img>.icon.blank{
+    opacity:1;
+}
+.rankingCon>.box.open>.img>.icon.filled{
+    opacity:1;
+}
+.rankingCon>.box.open>.img>.icon.blank{
+    opacity:0;
+}
+
+
+
+.thumbExpression .expression{
+    position: relative;
+    display: inline-block;
+    width:auto;
+}
+.thumbExpression .expression img{
+    width:150px;
+    max-width: 100%;
+}
+.thumbExpression .expression .expression-title{
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+    color:#999;
+}
+
+.landingPageCon-5 .logo{
+    width: 250px;
+}
+.landingPageCon-5 .landingPages .form-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+.bigSocialBtn{
+    display: inline-block;
+    border: none;
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 10px 73px;
+    border-radius: 8px;
+    background: linear-gradient(#ccc,#fff);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2), 2px 2px 30px rgba(0,0,0,.1) inset;
+}
+.bigSocialBtn.fb{
+    /*background: #eee;*/
+}
+.bigSocialBtn.yelp{
+    /*background: #eee;*/
+}
+.bigSocialBtn:hover,
+.bigSocialBtn:focus{
+    box-shadow: 2px 5px 3px rgba(0,0,0,.2), 2px 2px 30px rgba(0,0,0,.1) inset;
+}
+.bigSocialBtn img{
+    width: 140px;
+}
+.bigFeedbackBtn{
+    display: inline-block;
+    padding: 16px 49px !important;
+    border-radius: 40px !important;
+    background: #ff4a4a;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-top:30px !important;
+}
+.bigFeedbackBtn:hover,
+.bigFeedbackBtn:focus{
+    text-decoration: none;
+    background: #ec4848;
+    color: #fff;
+}
+.hideDiv{
+    display: none !important;
+}
+.social-icon-holder {
+    height: 120px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.social-icon-holder a {
+    display: block;
+}
+.social-icon-holder a img {
+    max-height: 90px;
+    max-width: 100%;
+}
